@@ -234,7 +234,7 @@ export default function App() {
               </p>
             </div>
           ) : (
-            <div className="pb-32">
+            <div className="pb-40">
               {activeSession.messages.map((msg) => (
                 <MessageBubble key={msg.id} message={msg} />
               ))}

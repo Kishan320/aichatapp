@@ -125,7 +125,7 @@ export function ChatInput({ input, setInput, onSubmit, isLoading, images, setIma
   };
 
   return (
-    <div className="mx-auto max-w-4xl w-full px-4 lg:px-8 pb-6 relative z-10 w-full">
+    <div className="mx-auto max-w-4xl w-full px-4 lg:px-8 pb-4 relative z-10">
       <motion.div 
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -189,7 +189,7 @@ export function ChatInput({ input, setInput, onSubmit, isLoading, images, setIma
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={isDragging ? "Drop images here..." : "Send a message..."}
+            placeholder={isDragging ? "Drop images here..." : "Message..."}
             className="flex-1 max-h-[200px] bg-transparent border-0 resize-none outline-none py-3 px-2 text-slate-900 placeholder:text-slate-400 custom-scrollbar"
             rows={1}
             disabled={isLoading}
@@ -223,11 +223,11 @@ export function ChatInput({ input, setInput, onSubmit, isLoading, images, setIma
             </button>
           </div>
         </div>
-        
-        <div className="absolute -bottom-6 left-0 right-0 text-center text-xs text-slate-500 font-medium">
-          Nexus AI can make mistakes. Consider verifying important information.
-        </div>
       </motion.div>
+      
+      <div className="text-center text-[10px] sm:text-xs text-slate-500/85 font-medium mt-3 px-4">
+        Nexus AI can make mistakes. Consider verifying important information.
+      </div>
     </div>
   );
 }
