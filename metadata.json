@@ -1,0 +1,6 @@
+{
+  "name": "Nexus AI",
+  "description": "A premium AI assistant platform featuring real-time chat, dark mode glassmorphism UI, and Gemini integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
